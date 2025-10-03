@@ -84,6 +84,48 @@ class LiaaApp extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 child: const Text("Sudut kanan bawah"),
               ),
+
+              const SizedBox(height: 20),
+
+              // ElevatedButton
+              ElevatedButton(
+                onPressed: () {
+                  print("Elevated Button ditekan!");
+                },
+                child: const Text("Elevated Button"),
+              ),
+
+              // TextButton
+              TextButton(
+                onPressed: () {
+                  print("Text Button ditekan!");
+                },
+                child: const Text("Text Button"),
+              ),
+
+              // OutlinedButton
+              OutlinedButton(
+                onPressed: () {
+                  print("Outlined Button ditekan!");
+                },
+                child: const Text("Outlined Button"),
+              ),
+
+              // IconButton
+              IconButton(
+                icon: const Icon(Icons.favorite, color: Colors.red),
+                onPressed: () {
+                  print("Icon Button ditekan!");
+                },
+              ),
+
+              // FloatingActionButton
+              FloatingActionButton(
+                onPressed: () {
+                  print("Floating Action Button ditekan!");
+                },
+                child: const Icon(Icons.add),
+              ),
             ],
           ),
         ),
@@ -122,13 +164,9 @@ class LiaaApp extends StatelessWidget {
         // Bottom Navigation Bar
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
-            ),
-            BottomNavigationBarItem(icon: Icon(Icons.school),label: 'School',
-            ),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Business'),
+            BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
           ],
         ),
       ),
