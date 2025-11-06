@@ -200,7 +200,7 @@ class LiaaApp extends StatelessWidget {
             ],
           ),
         ),
-
+        bottomSheet:,
         // Bottom Navigation Bar
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
